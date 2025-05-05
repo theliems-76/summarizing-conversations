@@ -38,7 +38,7 @@ Dự án này khám phá khả năng tóm tắt các đoạn hội thoại bằn
 ## Dataset
 
 Dự án sử dụng tập dữ liệu **SamSum**, chứa các đoạn hội thoại và bản tóm tắt tương ứng.
--   **Nguồn:** Có thể tải từ [Kaggle](<Link tới trang Kaggle nếu có>) hoặc sử dụng trực tiếp từ thư viện `datasets` của Hugging Face (`huggingface.co/datasets/samsum`).
+-   **Nguồn:** sử dụng trực tiếp từ thư viện `datasets` của Hugging Face (`huggingface.co/datasets/samsum`).
 -   **Đặc điểm:** Bao gồm 3 file CSV (train, test, validation) với các cột `id`, `dialogue`, `summary`.
 
 ## Mô hình
@@ -64,8 +64,8 @@ Dự án sử dụng tập dữ liệu **SamSum**, chứa các đoạn hội tho
 
 1.  **Clone repository:**
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/theliems-76/summarizing-conversations
+    cd summarizing-conversations
     ```
 2.  **Tạo và kích hoạt môi trường ảo (khuyến nghị):**
     ```bash
