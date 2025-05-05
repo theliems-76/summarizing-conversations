@@ -60,34 +60,5 @@ Dự án sử dụng tập dữ liệu **SamSum**, chứa các đoạn hội tho
 -   Scikit-learn (có thể dùng cho TF-IDF trong khám phá dữ liệu).
 -   Kaggle Hub (`kagglehub`): (Nếu sử dụng) Để tải dữ liệu từ Kaggle.
 
-## Cài đặt
 
-1.  **Clone repository:**
-    ```bash
-    git clone https://github.com/theliems-76/summarizing-conversations
-    cd summarizing-conversations
-    ```
-2.  **Tạo và kích hoạt môi trường ảo (khuyến nghị):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # Trên Windows: venv\Scripts\activate
-    ```
-3.  **Cài đặt các thư viện cần thiết:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *(Lưu ý: Bạn cần tạo file `requirements.txt` chứa các thư viện cần thiết như `torch`, `transformers`, `datasets`, `nltk`, `pandas`, `evaluate`, `rouge-score`, `scikit-learn`, `kagglehub`...)*
-4.  **Tải dữ liệu NLTK (nếu chưa có):**
-    ```python
-    import nltk
-    nltk.download('punkt')
-    ```
-5.  **(Tùy chọn) Cấu hình Kaggle API:** Nếu bạn tải dataset từ Kaggle bằng API, hãy đảm bảo bạn đã cài đặt và cấu hình `kaggle.json`.
 
-## Sử dụng
-
-### Huấn luyện (Fine-tuning)
-
-Để huấn luyện lại mô hình từ đầu hoặc tiếp tục huấn luyện:
-```bash
-python train.py  # Hoặc tên file script huấn luyện của bạn
